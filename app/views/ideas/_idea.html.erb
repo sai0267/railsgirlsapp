@@ -11,7 +11,7 @@
 
   <p>
     <strong>Picture:</strong>
-    <%= image_tag(idea.picture_url, width: 600) if idea.picture? %>
+    <%= image_tag(idea.picture_url(:thumb), width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if idea.picture? %>
   </p>
 
 </div>
